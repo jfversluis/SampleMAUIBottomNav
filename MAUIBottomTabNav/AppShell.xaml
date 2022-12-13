@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUIBottomTabNav.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUIBottomTabNav"
+    xmlns:views="clr-namespace:MAUIBottomTabNav.Views"
+    >
+
+    <TabBar>
+        <ShellContent Title="Home Page"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent Title="First Page"
+                      ContentTemplate="{DataTemplate views:FirstPage}"/>
+        <ShellContent Title="Second Page"
+                      ContentTemplate="{DataTemplate views:SecondPage}"/>
+        <ShellContent Title="Third Page"
+                      ContentTemplate="{DataTemplate views:ThirdPage}"/>
+        <ShellContent Title="Fourth Page"
+                      ContentTemplate="{DataTemplate views:FourthPage}"/>
+        <ShellContent Title="Fifth Page"
+                      ContentTemplate="{DataTemplate views:FifthPage}"/>
+    </TabBar>
+    
+
+</Shell>
